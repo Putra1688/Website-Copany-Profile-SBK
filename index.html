@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="id" class="scroll-smooth">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,30 +8,32 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <script>
-    tailwind.config = {
-        theme: {
-            extend: {
-                colors: {
-                    utama: '#1F4D2B',    // Hijau Tua
-                    energi: '#F28C28',   // Oranye
-                    premium: '#C9A227',  // Emas
-                    netral: {
-                        100: '#F3F4F6',  // Abu muda (clean)
-                        200: '#E5E7EB',
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        utama: '#1F4D2B',    // Hijau Tua
+                        energi: '#F28C28',   // Oranye
+                        premium: '#C9A227',  // Emas
+                        netral: {
+                            100: '#F3F4F6',  // Abu muda (clean)
+                            200: '#E5E7EB',
+                        }
                     }
                 }
             }
         }
-    }
-</script>
+    </script>
 </head>
+
 <body class="bg-gray-50 text-gray-800 font-sans">
 
     <nav class="fixed w-full z-50 bg-utama/90 backdrop-blur-md text-white shadow-lg">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between h-20 items-center">
-                <a href="#home" class="flex-shrink-0 flex items-center">
-                    <img src="assets/logo.png" alt="Sumber Baku Jaya Logo" class="h-14 w-auto object-contain">
+                <a href="#home"
+                    class="flex-shrink-0 flex items-center bg-white p-3 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300">
+                    <img src="assets/logo.png" alt="Sumber Baku Jaya Logo" class="h-10 md:h-12 w-auto object-contain">
                 </a>
                 <div class="hidden md:block">
                     <div class="ml-10 flex items-baseline space-x-8 uppercase text-sm font-medium">
@@ -38,7 +41,8 @@
                         <a href="#produk" class="hover:text-amber-400 transition">Produk</a>
                         <a href="#keunggulan" class="hover:text-amber-400 transition">Keunggulan</a>
                         <a href="#pemesanan" class="hover:text-amber-400 transition">Cara Pesan</a>
-                        <a href="#kontak" class="bg-energi px-5 py-2 rounded-full hover:bg-amber-600 transition">Hubungi Kami</a>
+                        <a href="#kontak" class="bg-energi px-5 py-2 rounded-full hover:bg-amber-600 transition">Hubungi
+                            Kami</a>
                     </div>
                 </div>
                 <div class="md:hidden">
@@ -48,7 +52,8 @@
                 </div>
             </div>
         </div>
-        <div id="mobile-menu" class="hidden md:hidden bg-utama px-2 pt-2 pb-3 space-y-1 sm:px-3 text-center border-t border-emerald-800">
+        <div id="mobile-menu"
+            class="hidden md:hidden bg-utama px-2 pt-2 pb-3 space-y-1 sm:px-3 text-center border-t border-emerald-800">
             <a href="#home" class="block px-3 py-4 hover:bg-netral-900">Home</a>
             <a href="#produk" class="block px-3 py-4 hover:bg-netral-900">Produk</a>
             <a href="#keunggulan" class="block px-3 py-4 hover:bg-netral-900">Keunggulan</a>
@@ -59,10 +64,11 @@
 
     <header id="home" class="relative h-screen flex items-center justify-center overflow-hidden">
         <div class="absolute inset-0 z-0">
-            <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&q=80" alt="Warehouse" class="w-full h-full object-cover">
+            <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&q=80"
+                alt="Warehouse" class="w-full h-full object-cover">
             <div class="absolute inset-0 bg-gradient-to-r from-utama/95 to-utama/40"></div>
         </div>
-        
+
         <div class="relative z-10 max-w-7xl mx-auto px-4 text-white text-center md:text-left w-full">
             <h4 class="text-amber-400 font-bold tracking-widest mb-4">SUMBER BAKU JAYA</h4>
             <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-6">
@@ -70,14 +76,62 @@
                 <span class="text-premium decoration-2">Distributor Seluruh Indonesia.</span>
             </h1>
             <p class="text-lg md:text-xl text-gray-200 max-w-2xl mb-10">
-                Kami menghadirkan solusi distribusi bahan baku skala besar dengan sistem terpercaya, transparan, dan tepat waktu.
+                Kami menghadirkan solusi distribusi bahan baku skala besar dengan sistem terpercaya, transparan, dan
+                tepat waktu.
             </p>
             <div class="flex flex-col md:flex-row gap-4 justify-center md:justify-start">
-                <a href="#produk" class="px-8 py-4 bg-energi hover:bg-amber-600 rounded-md font-bold transition text-center">Lihat Produk</a>
-                <a href="#kontak" class="px-8 py-4 border-2 border-white hover:bg-white hover:text-utama rounded-md font-bold transition text-center">Konsultasi Sekarang</a>
+                <a href="#produk"
+                    class="px-8 py-4 bg-energi hover:bg-amber-600 rounded-md font-bold transition text-center">Lihat
+                    Produk</a>
+                <a href="#kontak"
+                    class="px-8 py-4 border-2 border-white hover:bg-white hover:text-utama rounded-md font-bold transition text-center">Konsultasi
+                    Sekarang</a>
             </div>
         </div>
     </header>
+
+<section class="relative z-20 -mt-20 md:-mt-16 mb-24">
+    <div class="max-w-7xl mx-auto px-2 md:px-4">
+        <div class="bg-white py-6 px-2 md:p-12 rounded-2xl md:rounded-3xl shadow-2xl border border-gray-100 relative">
+            
+            <div class="grid grid-cols-3 items-center divide-x divide-gray-100">
+                
+                <div class="flex flex-col md:flex-row items-center justify-center md:justify-start gap-2 md:gap-4 px-1 md:pr-6">
+                    <img src="https://cdn-icons-png.flaticon.com/512/9306/9306614.png" 
+                         alt="Icon Mitra" 
+                         class="h-8 w-8 md:h-16 md:w-16 object-contain">
+                    <div class="text-center md:text-left">
+                        <p class="text-lg md:text-4xl font-extrabold text-utama leading-none">200+</p>
+                        <p class="text-[10px] md:text-base text-gray-600 font-medium leading-tight">Mitra<br class="md:hidden"> Distributor</p>
+                    </div>
+                </div>
+
+                <div class="flex flex-col md:flex-row items-center justify-center md:justify-start gap-2 md:gap-4 px-1 md:px-10">
+                    <img src="https://cdn-icons-png.flaticon.com/512/1554/1554561.png" 
+                         alt="Icon Produk" 
+                         class="h-8 w-8 md:h-16 md:w-16 object-contain">
+                    <div class="text-center md:text-left">
+                        <p class="text-lg md:text-4xl font-extrabold text-utama leading-none">3.000+</p>
+                        <p class="text-[10px] md:text-base text-gray-600 font-medium leading-tight">Produk<br class="md:hidden"> Distribusi</p>
+                    </div>
+                </div>
+
+                <div class="flex flex-col md:flex-row items-center justify-center md:justify-start gap-2 md:gap-4 px-1 md:pl-10">
+                    <img src="https://cdn-icons-png.flaticon.com/512/854/854878.png" 
+                         alt="Icon Map" 
+                         class="h-8 w-8 md:h-16 md:w-16 object-contain">
+                    <div class="text-center md:text-left">
+                        <p class="text-lg md:text-4xl font-extrabold text-utama leading-none">30+</p>
+                        <p class="text-[10px] md:text-base text-gray-600 font-medium leading-tight">Kota di<br class="md:hidden"> Indonesia</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="absolute bottom-0 left-6 right-6 h-1 bg-premium rounded-t-full opacity-50"></div>
+        </div>
+    </div>
+</section>
 
     <section id="produk" class="py-24 bg-white">
         <div class="max-w-7xl mx-auto px-4">
@@ -85,18 +139,25 @@
                 <div>
                     <h2 class="text-3xl md:text-4xl font-bold text-utama mb-6">Produk Kami</h2>
                     <p class="text-gray-600 text-lg mb-8">
-                        Kami menyediakan bahan baku dalam jumlah besar dengan sistem distribusi langsung dari sumber utama.
+                        Kami menyediakan bahan baku dalam jumlah besar dengan sistem distribusi langsung dari sumber
+                        utama.
                     </p>
                     <div class="bg-gray-100 p-8 rounded-2xl border-l-8 border-primary shadow-sm">
                         <h3 class="text-2xl font-bold mb-4 text-utama italic">Minyak Kita</h3>
                         <p class="font-semibold text-gray-700 mb-2">Pilihan Jenis Paket:</p>
                         <ul class="space-y-3 mb-6">
-                            <li class="flex items-center"><i class="fa-solid fa-check text-green-600 mr-3"></i> 400 Dus</li>
-                            <li class="flex items-center"><i class="fa-solid fa-check text-green-600 mr-3"></i> 800 Dus</li>
-                            <li class="flex items-center"><i class="fa-solid fa-check text-green-600 mr-3"></i> 2.200 Dus</li>
+                            <li class="flex items-center"><i class="fa-solid fa-check text-green-600 mr-3"></i> 400 Dus
+                            </li>
+                            <li class="flex items-center"><i class="fa-solid fa-check text-green-600 mr-3"></i> 800 Dus
+                            </li>
+                            <li class="flex items-center"><i class="fa-solid fa-check text-green-600 mr-3"></i> 2.200
+                                Dus</li>
                         </ul>
-                        <p class="text-sm text-gray-500 italic">*Harga fluktuatif. Bisa tanyakan langsung ke kontak yang tersedia.</p>
-                        <a href="https://wa.me/6282119097298" class="inline-block mt-6 px-6 py-3 bg-utama text-white rounded-lg hover:bg-bg-utama transition">Ajukan Penawaran</a>
+                        <p class="text-sm text-gray-500 italic">*Harga fluktuatif. Bisa tanyakan langsung ke kontak yang
+                            tersedia.</p>
+                        <a href="https://wa.me/6282119097298"
+                            class="inline-block mt-6 px-6 py-3 bg-utama text-white rounded-lg hover:bg-bg-utama transition">Ajukan
+                            Penawaran</a>
                     </div>
                 </div>
                 <div class="relative">
@@ -110,113 +171,123 @@
     </section>
 
     <section id="keunggulan" class="py-24 bg-white">
-    <div class="max-w-7xl mx-auto px-4">
-        <div class="text-center mb-16 relative">
-            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4 inline-block relative">
-                <span class="hidden md:block absolute -left-24 top-1/2 w-20 h-px bg-premium"></span>
-                Kenapa Memilih SBJ?
-                <span class="hidden md:block absolute -right-24 top-1/2 w-20 h-px bg-premium"></span>
-            </h2>
-            <p class="text-gray-500 flex items-center justify-center gap-2">
-                Keunggulan Sumber Baku Jaya dalam mendukung kebutuhan distribusi bahan baku Anda. 
-                <i class="fa-solid fa-chevron-right text-xs text-premium"></i>
-            </p>
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-16 relative">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4 inline-block relative">
+                    <span class="hidden md:block absolute -left-24 top-1/2 w-20 h-px bg-premium"></span>
+                    Kenapa Memilih SBJ?
+                    <span class="hidden md:block absolute -right-24 top-1/2 w-20 h-px bg-premium"></span>
+                </h2>
+                <p class="text-gray-500 flex items-center justify-center gap-2">
+                    Keunggulan Sumber Baku Jaya dalam mendukung kebutuhan distribusi bahan baku Anda.
+                    <i class="fa-solid fa-chevron-right text-xs text-premium"></i>
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-5 rounded-3xl overflow-hidden shadow-2xl">
+
+                <div class="bg-white p-10 text-center flex flex-col items-center border-r border-gray-100">
+                    <div class="w-16 h-16 bg-utama rounded-full flex items-center justify-center mb-6 shadow-lg">
+                        <i class="fa-solid fa-handshake text-premium text-2xl"></i>
+                    </div>
+                    <h3 class="font-bold text-xl mb-4 text-gray-800">Mitra Terpercaya</h3>
+                    <p class="text-gray-500 text-sm leading-relaxed">
+                        Kami membangun kepercayaan dalam setiap langkah distribusi bahan baku skala besar.
+                    </p>
+                </div>
+
+                <div class="bg-white p-10 text-center flex flex-col items-center border-r border-gray-100">
+                    <div class="w-16 h-16 bg-energi rounded-full flex items-center justify-center mb-6 shadow-lg">
+                        <i class="fa-solid fa-file-signature text-white text-2xl"></i>
+                    </div>
+                    <h3 class="font-bold text-xl mb-4 text-gray-800">Kontrak Jelas & Transparan</h3>
+                    <p class="text-gray-500 text-sm leading-relaxed">
+                        Sistem kerja sama didasarkan pada dokumen resmi yang aman dan transparan.
+                    </p>
+                </div>
+
+                <div class="bg-utama p-10 text-center flex flex-col items-center border-r border-emerald-800">
+                    <div class="w-16 h-16 border-2 border-premium rounded-full flex items-center justify-center mb-6">
+                        <i class="fa-solid fa-cloud text-premium text-2xl"></i>
+                    </div>
+                    <h3 class="font-bold text-xl mb-4 text-white">Free Konsultasi Bisnis</h3>
+                    <p class="text-emerald-100/80 text-sm leading-relaxed">
+                        Tim kami siap membantu kebutuhan dan strategi distribusi bisnis Anda.
+                    </p>
+                </div>
+                <div class="bg-utama p-10 text-center flex flex-col items-center border-r border-emerald-800">
+                    <div class="w-16 h-16 border-2 border-premium rounded-full flex items-center justify-center mb-6">
+                        <i class="fa-solid fa-truck text-premium text-2xl"></i>
+                    </div>
+                    <h3 class="font-bold text-xl mb-4 text-white">Pengiriman Dikawal Langsung</h3>
+                    <p class="text-emerald-100/80 text-sm leading-relaxed">
+                        Setiap pengiriman dipantau secara ketat untuk menjamin keamanan hingga tujuan.
+                    </p>
+                </div>
+
+                <div class="bg-utama p-10 text-center flex flex-col items-center ">
+                    <div class="w-16 h-16 border-2 border-premium rounded-full flex items-center justify-center mb-6">
+                        <i class="fa-solid fa-box-archive text-premium text-2xl"></i>
+                    </div>
+                    <h3 class="font-bold text-xl mb-4 text-white">Sistem Distribusi Terstruktur</h3>
+                    <p class="text-emerald-100/80 text-sm leading-relaxed">
+                        Proses terintegrasi yang memastikan efisiensi tinggi dari produsen ke distributor.
+                    </p>
+                </div>
+
+            </div>
         </div>
-
-        <div class="grid md:grid-cols-5 rounded-3xl overflow-hidden shadow-2xl">
-            
-            <div class="bg-white p-10 text-center flex flex-col items-center border-r border-gray-100">
-                <div class="w-16 h-16 bg-utama rounded-full flex items-center justify-center mb-6 shadow-lg">
-                    <i class="fa-solid fa-handshake text-premium text-2xl"></i>
-                </div>
-                <h3 class="font-bold text-xl mb-4 text-gray-800">Mitra Terpercaya</h3>
-                <p class="text-gray-500 text-sm leading-relaxed">
-                    Kami membangun kepercayaan dalam setiap langkah distribusi bahan baku skala besar.
-                </p>
-            </div>
-
-            <div class="bg-white p-10 text-center flex flex-col items-center border-r border-gray-100">
-                <div class="w-16 h-16 bg-energi rounded-full flex items-center justify-center mb-6 shadow-lg">
-                    <i class="fa-solid fa-file-signature text-white text-2xl"></i>
-                </div>
-                <h3 class="font-bold text-xl mb-4 text-gray-800">Kontrak Jelas & Transparan</h3>
-                <p class="text-gray-500 text-sm leading-relaxed">
-                    Sistem kerja sama didasarkan pada dokumen resmi yang aman dan transparan.
-                </p>
-            </div>
-
-            <div class="bg-utama p-10 text-center flex flex-col items-center border-r border-emerald-800">
-                <div class="w-16 h-16 border-2 border-premium rounded-full flex items-center justify-center mb-6">
-                    <i class="fa-solid fa-cloud text-premium text-2xl"></i>
-                </div>
-                <h3 class="font-bold text-xl mb-4 text-white">Free Konsultasi Bisnis</h3>
-                <p class="text-emerald-100/80 text-sm leading-relaxed">
-                    Tim kami siap membantu kebutuhan dan strategi distribusi bisnis Anda.
-                </p>
-            </div>
-            <div class="bg-utama p-10 text-center flex flex-col items-center border-r border-emerald-800">
-                <div class="w-16 h-16 border-2 border-premium rounded-full flex items-center justify-center mb-6">
-                    <i class="fa-solid fa-truck text-premium text-2xl"></i>
-                </div>
-                <h3 class="font-bold text-xl mb-4 text-white">Pengiriman Dikawal Langsung</h3>
-                <p class="text-emerald-100/80 text-sm leading-relaxed">
-                    Setiap pengiriman dipantau secara ketat untuk menjamin keamanan hingga tujuan.
-                </p>
-            </div>
-
-            <div class="bg-utama p-10 text-center flex flex-col items-center ">
-                <div class="w-16 h-16 border-2 border-premium rounded-full flex items-center justify-center mb-6">
-                    <i class="fa-solid fa-box-archive text-premium text-2xl"></i>
-                </div>
-                <h3 class="font-bold text-xl mb-4 text-white">Sistem Distribusi Terstruktur</h3>
-                <p class="text-emerald-100/80 text-sm leading-relaxed">
-                    Proses terintegrasi yang memastikan efisiensi tinggi dari produsen ke distributor.
-                </p>
-            </div>
-
-        </div>
-    </div>
-</section>
+    </section>
 
     <section id="pemesanan" class="py-24 bg-utama text-white">
         <div class="max-w-5xl mx-auto px-4">
             <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">Cara Pemesanan</h2>
-            <div class="space-y-12 relative before:absolute before:left-8 md:before:left-1/2 before:w-1 before:h-full before:bg-premium">
+            <div
+                class="space-y-12 relative before:absolute before:left-8 md:before:left-1/2 before:w-1 before:h-full before:bg-premium">
                 <div class="relative flex flex-col md:flex-row items-center">
-                    <div class="absolute left-0 md:left-1/2 md:-translate-x-1/2 w-16 h-16 bg-energi border-4 border-primary rounded-full flex items-center justify-center z-10">
+                    <div
+                        class="absolute left-0 md:left-1/2 md:-translate-x-1/2 w-16 h-16 bg-energi border-4 border-primary rounded-full flex items-center justify-center z-10">
                         <i class="fa-brands fa-whatsapp text-2xl"></i>
                     </div>
                     <div class="ml-24 md:ml-0 md:w-1/2 md:pr-16 text-left md:text-right">
                         <h3 class="text-xl font-bold text-amber-400">1. Konsultasi Awal via Chat</h3>
-                        <p class="text-netral-100">Diskusi kebutuhan produk dan jumlah pemesanan langsung melalui WhatsApp.</p>
-                        <a href="https://wa.me/6282119097298" class="inline-block mt-2 text-sm underline hover:text-amber-400">Klik Chat Sekarang</a>
+                        <p class="text-netral-100">Diskusi kebutuhan produk dan jumlah pemesanan langsung melalui
+                            WhatsApp.</p>
+                        <a href="https://wa.me/6282119097298"
+                            class="inline-block mt-2 text-sm underline hover:text-amber-400">Klik Chat Sekarang</a>
                     </div>
                 </div>
                 <div class="relative flex flex-col md:flex-row items-center">
-                    <div class="absolute left-0 md:left-1/2 md:-translate-x-1/2 w-16 h-16 bg-energi border-4 border-primary rounded-full flex items-center justify-center z-10">
+                    <div
+                        class="absolute left-0 md:left-1/2 md:-translate-x-1/2 w-16 h-16 bg-energi border-4 border-primary rounded-full flex items-center justify-center z-10">
                         <i class="fa-solid fa-users text-2xl"></i>
                     </div>
                     <div class="ml-24 md:ml-0 md:w-1/2 md:pl-16 md:ml-auto">
                         <h3 class="text-xl font-bold text-amber-400">2. Kesepakatan & Kontrak</h3>
-                        <p class="text-netral-100">Penentuan harga, volume, dan tanda tangan perjanjian resmi (Bertemu langsung).</p>
+                        <p class="text-netral-100">Penentuan harga, volume, dan tanda tangan perjanjian resmi (Bertemu
+                            langsung).</p>
                     </div>
                 </div>
                 <div class="relative flex flex-col md:flex-row items-center">
-                    <div class="absolute left-0 md:left-1/2 md:-translate-x-1/2 w-16 h-16 bg-energi border-4 border-primary rounded-full flex items-center justify-center z-10">
+                    <div
+                        class="absolute left-0 md:left-1/2 md:-translate-x-1/2 w-16 h-16 bg-energi border-4 border-primary rounded-full flex items-center justify-center z-10">
                         <i class="fa-solid fa-money-bill-wave text-2xl"></i>
                     </div>
                     <div class="ml-24 md:ml-0 md:w-1/2 md:pr-16 text-left md:text-right">
                         <h3 class="text-xl font-bold text-amber-400">3. Pembayaran</h3>
-                        <p class="text-netral-100">Proses transaksi dilakukan sesuai dengan termin kesepakatan yang telah dibuat.</p>
+                        <p class="text-netral-100">Proses transaksi dilakukan sesuai dengan termin kesepakatan yang
+                            telah dibuat.</p>
                     </div>
                 </div>
                 <div class="relative flex flex-col md:flex-row items-center">
-                    <div class="absolute left-0 md:left-1/2 md:-translate-x-1/2 w-16 h-16 bg-energi border-4 border-primary rounded-full flex items-center justify-center z-10">
+                    <div
+                        class="absolute left-0 md:left-1/2 md:-translate-x-1/2 w-16 h-16 bg-energi border-4 border-primary rounded-full flex items-center justify-center z-10">
                         <i class="fa-solid fa-ship text-2xl"></i>
                     </div>
                     <div class="ml-24 md:ml-0 md:w-1/2 md:pl-16 md:ml-auto">
                         <h3 class="text-xl font-bold text-amber-400">4. Proses Pengiriman</h3>
-                        <p class="text-netral-100">Barang dikirim dari sumber utama dan dikawal tim hingga sampai ke lokasi Anda.</p>
+                        <p class="text-netral-100">Barang dikirim dari sumber utama dan dikawal tim hingga sampai ke
+                            lokasi Anda.</p>
                     </div>
                 </div>
             </div>
@@ -226,12 +297,14 @@
     <section id="kontak" class="py-24 bg-white">
         <div class="max-w-4xl mx-auto px-4 text-center">
             <h2 class="text-3xl md:text-4xl font-bold text-utama mb-8">Siap Bekerja Sama dengan Kami?</h2>
-            <p class="text-gray-600 mb-10 text-lg">Hubungi tim Sumber Baku Jaya untuk informasi ketersediaan stok dan penawaran harga terbaik hari ini.</p>
+            <p class="text-gray-600 mb-10 text-lg">Hubungi tim Sumber Baku Jaya untuk informasi ketersediaan stok dan
+                penawaran harga terbaik hari ini.</p>
             <div class="bg-gray-50 p-10 rounded-3xl border-2 border-dashed border-primary">
                 <i class="fa-brands fa-whatsapp text-6xl text-green-500 mb-6"></i>
                 <h3 class="text-2xl font-bold mb-4">WhatsApp Marketing</h3>
                 <p class="text-3xl font-mono font-bold text-utama mb-8">0821-1909-7298</p>
-                <a href="https://wa.me/6282119097298" class="px-10 py-4 bg-green-600 hover:bg-green-700 text-white rounded-full font-bold text-lg transition shadow-xl inline-flex items-center">
+                <a href="https://wa.me/6282119097298"
+                    class="px-10 py-4 bg-green-600 hover:bg-green-700 text-white rounded-full font-bold text-lg transition shadow-xl inline-flex items-center">
                     <i class="fa-brands fa-whatsapp mr-3 text-2xl"></i> Chat Admin Sekarang
                 </a>
             </div>
@@ -242,10 +315,14 @@
         <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between gap-12 mb-12">
             <div>
                 <div class="mb-6">
-                    <img src="assets/logo.png" alt="Sumber Baku Jaya Logo" class="h-16 w-auto object-contain">
+                    <a href="#home"
+                        class="inline-flex items-center bg-white px-6 py-4 rounded-2xl shadow-sm hover:shadow-md transition-all">
+                        <img src="assets/logo.png" alt="Sumber Baku Jaya Logo" class="h-12 w-auto object-contain">
+                    </a>
                 </div>
-                <p class="text-gray-400 leading-relaxed max-w-md">
-                    Partner terpercaya dalam suplai bahan baku skala besar untuk kebutuhan industri dan distributor di seluruh Indonesia.
+                <p class="text-gray-400 leading-relaxed max-w-sm">
+                    Partner terpercaya dalam suplai bahan baku skala besar untuk kebutuhan industri dan distributor di
+                    seluruh Indonesia.
                 </p>
             </div>
             <div>
@@ -259,11 +336,14 @@
             </div>
         </div>
         <div class="border-t border-emerald-900 max-w-7xl mx-auto px-4 pt-8 text-center">
-            <p class="text-gray-500 text-sm mb-2">&copy; 2026 Sumber Baku Jaya with <a href="https://www.instagram.com/addaready/" class="text-premium font-medium italic">Addaready</a></p>
+            <p class="text-gray-500 text-sm mb-2">&copy; 2026 Sumber Baku Jaya with <a
+                    href="https://www.instagram.com/addaready/" class="text-premium font-medium italic">Addaready</a>
+            </p>
             <p class="text-premium font-medium italic">"Partner terpercaya dalam suplai bahan baku skala besar"</p>
         </div>
     </footer>
 
     <script src="script.js"></script>
 </body>
+
 </html>
