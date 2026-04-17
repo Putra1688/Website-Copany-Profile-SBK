@@ -1,3 +1,4 @@
 User-agent: *
 Allow: /
-Sitemap: https://sumber-baku-jaya.netlify.app/sitemap.xml
+
+Sitemap: https://sumber-baku-jaya.netlify.app/sitemap.xml
